@@ -296,6 +296,8 @@ Columns:
 ```
 
 ## Example Architecture you can plan 
+
+```
 callgraph_app/
 │
 ├── app.py                     # Main Streamlit entry point
@@ -321,6 +323,7 @@ callgraph_app/
 │   └── schema.md
 │
 └── README.md
+```
 
 
 

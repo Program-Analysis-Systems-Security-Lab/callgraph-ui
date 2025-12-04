@@ -295,4 +295,32 @@ Columns:
 }
 ```
 
+## Example Architecture you can plan 
+callgraph_app/
+│
+├── app.py                     # Main Streamlit entry point
+│
+├── ui/
+│   ├── search_panel.py
+│   ├── tree_viewer.py
+│   ├── table_view.py
+│   └── export_download.py
+│
+├── backend/
+│   ├── db_client.py
+│   ├── query_api.py
+│   ├── call_tree.py
+│   ├── subgraph_export.py
+│   └── utils.py
+│
+├── loader/
+│   └── json_loader.py
+│
+├── data/
+│   ├── sample_callgraph.json
+│   └── schema.md
+│
+└── README.md
+
+
 

@@ -1,0 +1,89 @@
+{
+  "functions": [
+    {
+      "id": "F1",
+      "name": "main",
+      "file": "main.c",
+      "line": 10,
+      "return_type": "int",
+      "params": [],
+      "visibility": "public",
+      "is_static": false,
+      "language": "c"
+    },
+    {
+      "id": "F2",
+      "name": "init",
+      "file": "init.c",
+      "line": 5,
+      "return_type": "void",
+      "params": [],
+      "visibility": "private",
+      "is_static": true,
+      "language": "c"
+    },
+    {
+      "id": "F3",
+      "name": "load_config",
+      "file": "config.c",
+      "line": 20,
+      "return_type": "int",
+      "params": ["const char *"],
+      "visibility": "public",
+      "is_static": false,
+      "language": "c"
+    },
+    {
+      "id": "F4",
+      "name": "run",
+      "file": "run.c",
+      "line": 12,
+      "return_type": "void",
+      "params": [],
+      "visibility": "public",
+      "is_static": false,
+      "language": "c"
+    }
+  ],
+  "calls": [
+    {
+      "caller": "F1",
+      "callee": "F2",
+      "attributes": {
+        "direct": true,
+        "indirect": false,
+        "via_function_pointer": false,
+        "resolution_method": "static",
+        "file": "main.c",
+        "line": 12,
+        "depth": 1
+      }
+    },
+    {
+      "caller": "F2",
+      "callee": "F3",
+      "attributes": {
+        "direct": true,
+        "indirect": false,
+        "via_function_pointer": false,
+        "resolution_method": "static",
+        "file": "init.c",
+        "line": 7,
+        "depth": 2
+      }
+    },
+    {
+      "caller": "F1",
+      "callee": "F4",
+      "attributes": {
+        "direct": false,
+        "indirect": true,
+        "via_function_pointer": true,
+        "resolution_method": "static",
+        "file": "main.c",
+        "line": 20,
+        "depth": 1
+      }
+    }
+  ]
+}
